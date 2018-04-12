@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center"
+     android:orientation="vertical"
+      android:layout_width="fill_parent" 
+      android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_size_extra_small" 
+        android:textColor="@color/text_tab_bar" 
+        android:gravity="bottom|center" 
+        android:id="@+id/label" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" />
+</LinearLayout>

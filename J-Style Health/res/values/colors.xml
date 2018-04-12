@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="quan_chang_an_niu">#ffffffff</color>
+    <color name="brown">#ff996633</color>
+    <color name="gray">#ff555555</color>
+    <color name="progeress_gray">#ff000000</color>
+    <color name="orange_light">#fffff5e0</color>
+    <color name="red">#ffff0000</color>
+    <color name="title_text">#ffffffff</color>
+    <color name="date_left">#ff292929</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue_back">#ff51d4ff</color>
+    <color name="alarm_yellow">#ffa58436</color>
+    <color name="alarm_text_color">#ffbebebe</color>
+    <color name="sleep_text_black">#ff585858</color>
+    <color name="progress_char_color">#ff414441</color>
+</resources>

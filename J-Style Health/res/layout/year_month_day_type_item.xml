@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/date_tab_year_month_day_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="60.0dip"
+    android:background="@drawable/title_bg"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/reduce_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/left_btn_selected" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/title_time_bg"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/year_month_day_star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="3.0dip"
+                    android:text="2013.03.01"
+                    android:textSize="@dimen/activity_horizontal_margin" />
+
+                <ImageView
+                    android:id="@id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:src="@drawable/date_line" />
+
+                <TextView
+                    android:id="@+id/year_month_day_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:gravity="center"
+                    android:paddingRight="3.0dip"
+                    android:text="2013.01.28"
+                    android:textSize="@dimen/activity_horizontal_margin" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/add_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rigth_bt_selected" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

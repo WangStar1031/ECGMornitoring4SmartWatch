@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/basic_info_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+			<LinearLayout
+			    android:layout_weight="1"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:orientation="horizontal"
+                android:gravity="left|center" >
+            <ImageView
+                android:id="@id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/setting_height" />
+
+            <TextView
+                android:id="@+id/basic_textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="@string/setting_height"
+                android:textColor="#ffc8c8c8"
+                android:textSize="@dimen/activity_horizontal_margin" />
+			</LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:gravity="left|center" >
+
+                <EditText
+                    android:id="@+id/height_editText"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:text="170" >
+
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    android:id="@+id/setting_height_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="inches"
+                    android:textColor="#ff868686"
+                    android:textSize="@dimen/activity_horizontal_margin" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+			<LinearLayout
+			    android:layout_weight="1"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:orientation="horizontal"
+                android:gravity="left|center" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/setting_weigth" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="@string/setting_weight"
+                android:textColor="#ffc8c8c8"
+                android:textSize="@dimen/activity_horizontal_margin" />
+			</LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="left|center" >
+
+                <EditText
+                    android:id="@+id/weight_editText"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:text="60" />
+
+                <TextView
+                    android:id="@+id/setting_weight_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="lbs"
+                    android:textColor="#ff868686"
+                    android:textSize="@dimen/activity_horizontal_margin" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+			<LinearLayout
+			    android:layout_weight="1"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:orientation="horizontal"
+                android:gravity="left|center" >
+            <ImageView
+                android:id="@id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/setting_stride" />
+
+            <TextView
+                android:id="@+id/basic_textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="@string/setting_length"
+                android:textColor="#ffc8c8c8"
+                android:textSize="@dimen/activity_horizontal_margin" />
+			</LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="left|center" >
+
+                <EditText
+                    android:id="@+id/length_editText"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:text="50" />
+
+                <TextView
+                    android:id="@+id/setting_length_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="inches"
+                    android:textColor="#ff868686"
+                    android:textSize="@dimen/activity_horizontal_margin" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+			<LinearLayout
+			    android:layout_weight="1"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:orientation="horizontal"
+                android:gravity="left|center" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/setting_age" />
+
+            <TextView
+                android:id="@id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="@string/setting_age"
+                android:textColor="#ffc8c8c8"
+                android:textSize="@dimen/activity_horizontal_margin" />
+			</LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="left|center" >
+
+                <EditText
+                    android:id="@+id/age_editText"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20.0dip"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="25" />
+
+                <TextView
+                    android:id="@id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="age"
+                    android:textColor="#ff868686"
+                    android:textSize="@dimen/activity_horizontal_margin"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+			<LinearLayout
+			    android:layout_weight="1"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:orientation="horizontal"
+                android:gravity="left|center" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/setting_gender" />
+
+            <TextView
+                android:id="@id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="@string/setting_sex"
+                android:textColor="#ffc8c8c8"
+                android:textSize="@dimen/activity_horizontal_margin" />
+			</LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="20.0dip"
+                android:gravity="left|center" >
+
+                <Button
+                    android:id="@+id/setting_female_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/setting_female" />
+
+                <Button
+                    android:id="@+id/setting_male_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0.0dip"
+                    android:background="@drawable/male_pressed" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

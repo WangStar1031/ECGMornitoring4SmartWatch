@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/date_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bg" >
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/back_btn_selected" />
+
+        <TextView
+            android:id="@+id/page_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/action_settings"
+            android:textSize="@dimen/date_left_date" />
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/setting_reset_btn_seleted"
+            android:text="@string/setting_bt"
+            android:textColor="@color/alarm_text_color"
+            android:textSize="@dimen/date_left_date" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/head_bg" />
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:background="@null"
+            android:text=""
+            android:textColor="#ff787878"
+            android:textSize="@dimen/alarm_text" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/setting_restart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/bluetooth_setting" />
+
+            <Button
+                android:id="@+id/setting_bingbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/setting_restart"
+                android:layout_toLeftOf="@id/setting_restart"
+                android:text="@string/bluetooth_bundler" />
+
+                <!-- android:background="#ffffffff" -->
+            <Button
+                android:id="@+id/four_btn"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_alignBaseline="@id/setting_bingbtn"
+                android:layout_toLeftOf="@id/setting_bingbtn"
+                android:text=" 24 "
+               android:background="#ffffffff"
+                android:textSize="15.0dip" />
+
+                <!-- android:background="#ff3db8e0" -->
+            <Button
+                android:id="@+id/tw_btn"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_alignBaseline="@id/four_btn"
+                android:layout_toLeftOf="@id/four_btn"
+                android:text=" 12 "
+                android:background="#ff3db8e0"
+                android:textSize="15.0dip" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10.0dip"
+            android:gravity="right|center"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_weight="0.55"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/setting_radiogroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.0dip"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_basic"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/setting_basic_radio"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/progress_text_bar" />
+
+            <RadioButton
+                android:id="@+id/radio_goald"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/setting_goald_radio"
+                android:button="@null"
+                android:gravity="center"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/progress_text_bar" />
+
+            <RadioButton
+                android:id="@+id/radio_pedometer"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/setting_pedometer_radio"
+                android:button="@null"
+                android:gravity="center"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/progress_text_bar" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/progress_line" />
+
+        <TabHost
+            android:id="@+id/setting_tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_below="@id/setting_radiogroup"
+            android:layout_weight="1.0" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white" >
+
+                <LinearLayout
+                    android:id="@+id/basic_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/goald_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/pedometer_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" />
+            </FrameLayout>
+        </TabHost>
+    </LinearLayout>
+
+</LinearLayout>

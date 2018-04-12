@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="0.1"
+            android:background="@drawable/progress_title_bg"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.35"
+                    android:gravity="center" >
+
+                    <ImageButton
+                        android:id="@+id/week_ib"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageButton
+                        android:id="@+id/month_ib"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.35"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageButton
+                        android:id="@+id/year_ib"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="0.2"
+            android:background="#ff154661"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/show_progress_data_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/progress_date_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="0.1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="0.55"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/progerss_radiogroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.0dip"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/steps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/progress_steps_selected"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/progress_steps_tab"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/progress_text_bar"
+                    android:textSize="@dimen/font_size_extra_small" />
+
+                <RadioButton
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/progress_steps_selected"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/progress_time_tab"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/progress_text_bar"
+                    android:textSize="@dimen/font_size_extra_small" />
+
+                <RadioButton
+                    android:id="@+id/distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/progress_steps_selected"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/progress_distance_tab"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/progress_text_bar"
+                    android:textSize="@dimen/font_size_extra_small" />
+
+                <RadioButton
+                    android:id="@+id/calories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/progress_steps_selected"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/progress_calories_tab"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/progress_text_bar"
+                    android:textSize="@dimen/font_size_extra_small" />
+
+                <RadioButton
+                    android:id="@+id/sleep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/progress_steps_selected"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/progress_slept_tab"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/progress_text_bar"
+                    android:textSize="@dimen/font_size_extra_small" />
+
+                <RadioButton
+                    android:id="@+id/goal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/progress_steps_selected"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/progress_goald_tab"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/progress_text_bar"
+                    android:textSize="@dimen/font_size_extra_small" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/progress_line" />
+
+            <TabHost
+                android:id="@+id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_below="@id/progerss_radiogroup"
+                android:layout_weight="1.0" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:visibility="gone" />
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/white" >
+
+                    <LinearLayout
+                        android:id="@+id/layout1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/progress_char_color"
+                        android:orientation="vertical" />
+
+                    <LinearLayout
+                        android:id="@+id/layout2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/progress_char_color"
+                        android:orientation="vertical" />
+
+                    <LinearLayout
+                        android:id="@+id/layout3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/progress_char_color"
+                        android:orientation="vertical" />
+
+                    <LinearLayout
+                        android:id="@+id/layout4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/progress_char_color"
+                        android:orientation="vertical" />
+
+                    <LinearLayout
+                        android:id="@+id/layout5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/progress_char_color"
+                        android:orientation="vertical" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/progress_char_color"
+                        android:gravity="center" >
+
+                           <!--  android:id="@+id/textView1" -->
+                        <TextView
+                            android:id="@id/home_page_textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="0"
+                            android:textSize="45.0sp" />
+						<!-- android:layout_toRightOf="@id/textView1" -->
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/home_page_textView1"
+                            android:gravity="top"
+                            android:text="%" />
+                    </RelativeLayout>
+                </FrameLayout>
+            </TabHost>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_progress_pb"
+        android:layout_width="fill_parent"
+        android:layout_height="54.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <ProgressBar
+            android:id="@+id/pb_loading"
+            style="@style/progressBarStyle"
+            android:layout_width="32.0dip"
+            android:layout_height="32.0dip"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pb_loading"
+            android:layout_centerHorizontal="true"
+            android:text="@string/data_update" />
+    </RelativeLayout>
+
+</RelativeLayout>

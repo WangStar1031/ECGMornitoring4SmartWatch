@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="type">
+        <enum name="type_two_item" value="0" />
+        <enum name="type_three_item" value="1" />
+        <enum name="type_three_item_transparent" value="2" />
+    </attr>
+    <attr name="add_label" format="string" />
+    <attr name="reduce_label" format="string" />
+    <attr name="third_label" format="string" />
+</resources>

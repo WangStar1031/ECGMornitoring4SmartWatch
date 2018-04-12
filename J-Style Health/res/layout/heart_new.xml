@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <!-- android:background="@drawable/bg_commen" -->
+
+    <RelativeLayout
+        android:id="@+id/heart_r"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bg" >
+
+        <Button
+            android:id="@+id/heart_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/back_btn_selected" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/heart_relative"
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:layout_below="@id/heart_r" >
+
+        <com.YHJstyle.b005.b005.view.HearView
+            android:id="@+id/heartView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/heart_relative"
+        android:background="@drawable/bg_commen" >
+
+        <Button
+            android:background="@drawable/connection"
+            android:textColor="@color/blue_back"
+            android:id="@+id/heart_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="start" />
+      <!--  <Button 
+           android:id="@+id/heart_conncet"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/heart_start"
+           android:layout_centerHorizontal="true"
+           android:gravity="center"
+           android:text="conncet"
+           android:background="@drawable/connection"
+           /> -->
+        <TextView
+            android:background="@drawable/button_heart_violet"
+            android:id="@+id/text_ecg_val"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:text="88"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+        <TextView
+            android:textColor="@color/blue_back"
+            android:id="@+id/text_ecg_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/text_ecg_val"
+            android:layout_marginRight="5.0dip"
+            android:layout_toLeftOf="@id/text_ecg_val"
+            android:text="@string/heart_rate_unit"
+            android:textAppearance="?android:textAppearanceMedium" />
+    </RelativeLayout>
+
+</RelativeLayout>
